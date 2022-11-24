@@ -24,7 +24,7 @@ import com.formdev.flatlaf.intellijthemes.materialthemeuilite.FlatMaterialDarker
 public class Application {
 	
 	public static final String	APPLICATION_NAME = "FIRE",
-								APPLICATION_NAME_EXTENDED = "Find Files Recursively",
+								APPLICATION_NAME_EXTENDED = "Find Recursively",
 								VERSION = "v0.5 Alpha";
 	
 	public Frame appFrame;
