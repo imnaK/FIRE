@@ -1,0 +1,56 @@
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"AutoImportSettings\">\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\n  </component>\n  <component name=\"ChangeListManager\">\n    <list default=\"true\" id=\"2877d644-7fd2-4f3a-a8a3-0842cece5048\" name=\"Changes\" comment=\"\">\n      <change afterPath=\"$PROJECT_DIR$/.gitignore\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/.idea/encodings.xml\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/.idea/misc.xml\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/.idea/vcs.xml\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/pom.xml\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/src/main/java/prv/imnak/fire/Application.java\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/src/main/java/prv/imnak/fire/DataItem.java\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/src/main/java/prv/imnak/fire/DateType.java\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/src/main/java/prv/imnak/fire/Frame.java\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/src/main/java/prv/imnak/fire/Search.java\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/src/main/java/prv/imnak/fire/Util.java\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/src/main/java/prv/imnak/fire/dialogs/Dialog.java\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/src/main/java/prv/imnak/fire/dialogs/OptionsDialog.java\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/src/main/resources/prv/imnak/fire/img/logo.png\" afterDir=\"false\" />\n    </list>\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\n  </component>\n  <component name=\"Git.Settings\">\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\n  </component>\n  <component name=\"ProblemsViewState\">\n    <option name=\"selectedTabId\" value=\"ProjectErrors\" />\n  </component>\n  <component name=\"ProjectId\" id=\"2TZRvtf6IFgP0eUgOt0AdQYWZMQ\" />\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\" />\n  <component name=\"ProjectViewState\">\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\n    <option name=\"showLibraryContents\" value=\"true\" />\n  </component>\n  <component name=\"PropertiesComponent\"><![CDATA[{\n  \"keyToString\": {\n    \"RunOnceActivity.OpenProjectViewOnStart\": \"true\",\n    \"RunOnceActivity.ShowReadmeOnStart\": \"true\",\n    \"SHARE_PROJECT_CONFIGURATION_FILES\": \"true\",\n    \"codeWithMe.voiceChat.enabledByDefault\": \"false\",\n    \"git-widget-placeholder\": \"master\",\n    \"last_opened_file_path\": \"/home/yama/repos/FIRE/src/main/resources/prv/imnak/fire/img\",\n    \"settings.editor.selected.configurable\": \"preferences.keymap\"\n  }\n}]]></component>\n  <component name=\"RecentsManager\">\n    <key name=\"CopyFile.RECENT_KEYS\">\n      <recent name=\"$PROJECT_DIR$/src/main/resources/prv/imnak/fire/img\" />\n      <recent name=\"$PROJECT_DIR$/src/main/java/prv/imnak/fire\" />\n    </key>\n    <key name=\"MoveFile.RECENT_KEYS\">\n      <recent name=\"$PROJECT_DIR$/src/main/resources/prv/imnak/fire\" />\n      <recent name=\"$PROJECT_DIR$/src/main/resources/prv/imnak/fire/img\" />\n      <recent name=\"$PROJECT_DIR$/src/main/resources/prv/imnak/\" />\n    </key>\n  </component>\n  <component name=\"RunManager\">\n    <configuration name=\"Application\" type=\"Application\" factoryName=\"Application\" temporary=\"true\" nameIsGenerated=\"true\">\n      <option name=\"MAIN_CLASS_NAME\" value=\"prv.imnak.fire.Application\" />\n      <module name=\"fire\" />\n      <extension name=\"coverage\">\n        <pattern>\n          <option name=\"PATTERN\" value=\"prv.imnak.fire.*\" />\n          <option name=\"ENABLED\" value=\"true\" />\n        </pattern>\n      </extension>\n      <method v=\"2\">\n        <option name=\"Make\" enabled=\"true\" />\n      </method>\n    </configuration>\n    <configuration default=\"true\" type=\"JetRunConfigurationType\">\n      <module name=\"FIRE\" />\n      <method v=\"2\">\n        <option name=\"Make\" enabled=\"true\" />\n      </method>\n    </configuration>\n    <configuration default=\"true\" type=\"KotlinStandaloneScriptRunConfigurationType\">\n      <module name=\"FIRE\" />\n      <option name=\"filePath\" />\n      <method v=\"2\">\n        <option name=\"Make\" enabled=\"true\" />\n      </method>\n    </configuration>\n    <recent_temporary>\n      <list>\n        <item itemvalue=\"Application.Application\" />\n      </list>\n    </recent_temporary>\n  </component>\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\n  <component name=\"TaskManager\">\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\n      <changelist id=\"2877d644-7fd2-4f3a-a8a3-0842cece5048\" name=\"Changes\" comment=\"\" />\n      <created>1691248850515</created>\n      <option name=\"number\" value=\"Default\" />\n      <option name=\"presentableId\" value=\"Default\" />\n      <updated>1691248850515</updated>\n    </task>\n    <servers />\n  </component>\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision 6336b69444d275de99d3be74c50bdfe6df949059)
++++ b/.idea/workspace.xml	(date 1691252735360)
+@@ -4,23 +4,7 @@
+     <option name="autoReloadType" value="SELECTIVE" />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="2877d644-7fd2-4f3a-a8a3-0842cece5048" name="Changes" comment="">
+-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/main/java/prv/imnak/fire/Application.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/main/java/prv/imnak/fire/DataItem.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/main/java/prv/imnak/fire/DateType.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/main/java/prv/imnak/fire/Frame.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/main/java/prv/imnak/fire/Search.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/main/java/prv/imnak/fire/Util.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/main/java/prv/imnak/fire/dialogs/Dialog.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/main/java/prv/imnak/fire/dialogs/OptionsDialog.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/main/resources/prv/imnak/fire/img/logo.png" afterDir="false" />
+-    </list>
++    <list default="true" id="2877d644-7fd2-4f3a-a8a3-0842cece5048" name="Changes" comment="migrated to intellij idea" />
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+@@ -102,6 +86,19 @@
+       <option name="presentableId" value="Default" />
+       <updated>1691248850515</updated>
+     </task>
++    <task id="LOCAL-00001" summary="migrated to intellij idea">
++      <option name="closed" value="true" />
++      <created>1691251842881</created>
++      <option name="number" value="00001" />
++      <option name="presentableId" value="LOCAL-00001" />
++      <option name="project" value="LOCAL" />
++      <updated>1691251842881</updated>
++    </task>
++    <option name="localTasksCounter" value="2" />
+     <servers />
+   </component>
++  <component name="VcsManagerConfiguration">
++    <MESSAGE value="migrated to intellij idea" />
++    <option name="LAST_COMMIT_MESSAGE" value="migrated to intellij idea" />
++  </component>
+ </project>
+\ No newline at end of file

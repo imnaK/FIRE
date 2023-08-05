@@ -24,7 +24,6 @@ import javax.swing.JScrollPane;
 import javax.swing.JTextField;
 import javax.swing.SpringLayout;
 
-@SuppressWarnings("serial")
 public class Frame extends JFrame {
 
 	final String appFrameTitle = Application.APPLICATION_NAME + " - " + Application.VERSION;
@@ -34,15 +33,7 @@ public class Frame extends JFrame {
 	JPanel					contentPane;
 	JScrollPane				spFilesFound;
 	public JList<String>	listFilesFound;
-	
-//	JMenuBar				menuBar;
-//	JMenu					menuFile,
-//							menuHelp;
-//	JMenuItem				miChoosePath,
-//							miOpenOptions,
-//							miExit,
-//							miAbout;
-				
+
 	JTextField				tfSearchInPath,
 							tfSearchForString;
 	JLabel					lblSearchIn,
@@ -112,7 +103,7 @@ public class Frame extends JFrame {
 		layout.putConstraint(SpringLayout.SOUTH, btnExitApplication, -Util.GAP, SpringLayout.SOUTH, contentPane);
 		layout.putConstraint(SpringLayout.WEST, btnExitApplication, 0, SpringLayout.WEST, btnOpenFile);
 		
-		// textfield
+		// text-field
 		layout.putConstraint(SpringLayout.NORTH, tfSearchInPath, 0, SpringLayout.NORTH, lblSearchIn);
 		layout.putConstraint(SpringLayout.EAST, tfSearchInPath, -Util.GAP, SpringLayout.WEST, btnChangeSearchPath);
 		layout.putConstraint(SpringLayout.SOUTH, tfSearchInPath, 0, SpringLayout.SOUTH, lblSearchIn);
@@ -123,7 +114,7 @@ public class Frame extends JFrame {
 		layout.putConstraint(SpringLayout.SOUTH, tfSearchForString, 0, SpringLayout.SOUTH, lblSearchFor);
 		layout.putConstraint(SpringLayout.WEST, tfSearchForString, 0, SpringLayout.WEST, tfSearchInPath);
 		
-		// list (scrollpane)
+		// list (scroll-pane)
 		layout.putConstraint(SpringLayout.NORTH, spFilesFound, Util.GAP, SpringLayout.SOUTH, tfSearchForString);
 		layout.putConstraint(SpringLayout.EAST, spFilesFound, 0, SpringLayout.EAST, tfSearchForString);
 		layout.putConstraint(SpringLayout.SOUTH, spFilesFound, -Util.GAP, SpringLayout.SOUTH, contentPane);
@@ -161,63 +152,33 @@ public class Frame extends JFrame {
 		
 		// button
 		btnChangeSearchPath = new JButton("Choose Path");
-		btnChangeSearchPath.addActionListener(new ActionListener() {
-			@Override
-			public void actionPerformed(ActionEvent e) {
-				openFileChooserDialog();
-			}
-		});
+		btnChangeSearchPath.addActionListener(e -> openFileChooserDialog());
 		contentPane.add(btnChangeSearchPath);
 		
 		btnOpenOptionsDialog = new JButton("Options");
-		btnOpenOptionsDialog.addActionListener(new ActionListener() {
-			@Override
-			public void actionPerformed(ActionEvent e) {
-				openOptionsDialog();
-			}
-		});
+		btnOpenOptionsDialog.addActionListener(e -> openOptionsDialog());
 		contentPane.add(btnOpenOptionsDialog);
 
-		btnStartSearchProcess = new JButton("Seach");
-		btnStartSearchProcess.addActionListener(new ActionListener() {
-			@Override
-			public void actionPerformed(ActionEvent e) {
-				startSearchProcess();
-			}
-		});
+		btnStartSearchProcess = new JButton("Search");
+		btnStartSearchProcess.addActionListener(e -> startSearchProcess());
 		btnStartSearchProcess.setEnabled(false);
 		contentPane.add(btnStartSearchProcess);
 		
 		btnOpenFile = new JButton("Open File");
-		btnOpenFile.addActionListener(new ActionListener() {
-			@Override
-			public void actionPerformed(ActionEvent e) {
-				Application.tryOpenSelectedListItem();
-			}
-		});
+		btnOpenFile.addActionListener(e -> Application.tryOpenSelectedListItem());
 		btnOpenFile.setEnabled(false);
 		contentPane.add(btnOpenFile);
 		
 		btnOpenInExplorer = new JButton("Open Path");
-		btnOpenInExplorer.addActionListener(new ActionListener() {
-			@Override
-			public void actionPerformed(ActionEvent e) {
-				Application.tryOpenInExplorer();
-			}
-		});
+		btnOpenInExplorer.addActionListener(e -> Application.tryOpenInExplorer());
 		btnOpenInExplorer.setEnabled(false);
 		contentPane.add(btnOpenInExplorer);
 		
 		btnExitApplication = new JButton("Exit");
-		btnExitApplication.addActionListener(new ActionListener() {
-			@Override
-			public void actionPerformed(ActionEvent e) {
-				Application.exitApplication();
-			}
-		});
+		btnExitApplication.addActionListener(e -> Application.exitApplication());
 		contentPane.add(btnExitApplication);
 		
-		// textfield
+		// text-field
 		tfSearchInPath = new JTextField();
 		tfSearchInPath.setText(Search.selectedSearchDirectory.getAbsolutePath());
 		tfSearchInPath.setEditable(false);
@@ -233,8 +194,8 @@ public class Frame extends JFrame {
 		});
 		contentPane.add(tfSearchForString);
 		
-		// list and scrollpane
-		listFilesFound = new JList<String>();
+		// list and scroll-pane
+		listFilesFound = new JList<>();
 		listFilesFound.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mousePressed(MouseEvent e) {
@@ -243,13 +204,10 @@ public class Frame extends JFrame {
 				}
 			}
 		});
-		listFilesFound.addPropertyChangeListener(new PropertyChangeListener() {
-			@Override
-			public void propertyChange(PropertyChangeEvent evt) {
-				btnOpenFile.setEnabled(!listFilesFound.isSelectionEmpty());
-				btnOpenInExplorer.setEnabled(!listFilesFound.isSelectionEmpty());
-			}
-		});
+		listFilesFound.addPropertyChangeListener(evt -> {
+            btnOpenFile.setEnabled(!listFilesFound.isSelectionEmpty());
+            btnOpenInExplorer.setEnabled(!listFilesFound.isSelectionEmpty());
+        });
 		
 		spFilesFound = new JScrollPane();
 		spFilesFound.setViewportView(listFilesFound);

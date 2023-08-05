@@ -2,8 +2,8 @@ package prv.imnak.fire;
 
 public class DataItem {
 
-	private String	path,
-					filename;
+	private final String	path,
+							filename;
 	
 	public DataItem(String path, String filename) {
 		this.path = path;

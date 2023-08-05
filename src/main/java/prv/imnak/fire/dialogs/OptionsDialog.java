@@ -19,7 +19,6 @@ import javax.swing.JSeparator;
 import javax.swing.JTextField;
 import javax.swing.SpringLayout;
 
-@SuppressWarnings("serial")
 public class OptionsDialog extends Dialog {
 
 	JLabel		lblHeadingSearchOptions,
@@ -90,13 +89,13 @@ public class OptionsDialog extends Dialog {
 		layout.putConstraint(SpringLayout.SOUTH, cbFilterByDate, Util.HEIGHT + Util.GAP, SpringLayout.SOUTH, lblHeadingFilterOptions);
 		layout.putConstraint(SpringLayout.WEST, cbFilterByDate, 0, SpringLayout.WEST, seOptions);
 		
-		// combobox
+		// combo-box
 		layout.putConstraint(SpringLayout.NORTH, coDateType, Util.GAP, SpringLayout.SOUTH, cbFilterByDate);
 		layout.putConstraint(SpringLayout.EAST, coDateType, 0, SpringLayout.EAST, seOptions);
 		layout.putConstraint(SpringLayout.SOUTH, coDateType, Util.HEIGHT + Util.GAP, SpringLayout.SOUTH, cbFilterByDate);
 		layout.putConstraint(SpringLayout.WEST, coDateType, 0, SpringLayout.WEST, seOptions);
 		
-		// textfield
+		// text-field
 		layout.putConstraint(SpringLayout.NORTH, tfFilterStartDate, 0, SpringLayout.NORTH, lblFilterStartDate);
 		layout.putConstraint(SpringLayout.EAST, tfFilterStartDate, 0, SpringLayout.EAST, coDateType);
 		layout.putConstraint(SpringLayout.SOUTH, tfFilterStartDate, 0, SpringLayout.SOUTH, lblFilterStartDate);
@@ -158,22 +157,19 @@ public class OptionsDialog extends Dialog {
 		
 		cbFilterByDate = new JCheckBox("Date Filter");
 		cbFilterByDate.setSelected(Search.filterByDate);
-		cbFilterByDate.addActionListener(new ActionListener() {
-			@Override
-			public void actionPerformed(ActionEvent e) {
-				coDateType.setEnabled(cbFilterByDate.isSelected());
-				tfFilterStartDate.setEnabled(cbFilterByDate.isSelected());
-				tfFilterEndDate.setEnabled(cbFilterByDate.isSelected());
-			}
-		});
+		cbFilterByDate.addActionListener(e -> {
+            coDateType.setEnabled(cbFilterByDate.isSelected());
+            tfFilterStartDate.setEnabled(cbFilterByDate.isSelected());
+            tfFilterEndDate.setEnabled(cbFilterByDate.isSelected());
+        });
 		contentPane.add(cbFilterByDate);
 		
-		// combobox
+		// combo-box
 		coDateType = new JComboBox<>(DateType.values());
 		coDateType.setEnabled(cbFilterByDate.isSelected());
 		contentPane.add(coDateType);
 
-		// textfield
+		// text-field
 		tfFilterStartDate = new JTextField(Util.DATE_FORMAT.format(Search.filterStartDate));
 		tfFilterStartDate.setEnabled(cbFilterByDate.isSelected());
 		contentPane.add(tfFilterStartDate);
@@ -184,15 +180,11 @@ public class OptionsDialog extends Dialog {
 		
 		// button
 		btnOk = new JButton("Ok");
-		btnOk.addActionListener((e) -> {
-			optionOk();
-		});
+		btnOk.addActionListener(e -> optionOk());
 		contentPane.add(btnOk);
 		
 		btnCancel = new JButton("Cancel");
-		btnCancel.addActionListener((e) -> {
-			optionCancel();
-		});
+		btnCancel.addActionListener(e -> optionCancel());
 		contentPane.add(btnCancel);
 		
 		// separator
@@ -210,9 +202,10 @@ public class OptionsDialog extends Dialog {
 			Search.filterStartDate = Util.DATE_FORMAT.parse(tfFilterStartDate.getText()).getTime();
 			Search.filterEndDate = Util.DATE_FORMAT.parse(tfFilterEndDate.getText()).getTime();
 			Search.dateType = (DateType) coDateType.getSelectedItem();
-		} catch (ParseException e) {
+		} catch (ParseException ex) {
 			cbFilterByDate.setSelected(false);
-			e.printStackTrace();
+			//noinspection CallToPrintStackTrace
+			ex.printStackTrace();
 		}
 		Search.isCaseSensitiveSearch = cbCaseSensitive.isSelected();
 		Search.isRegularExpressionSearch = cbRegularExpression.isSelected();

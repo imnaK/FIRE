@@ -20,7 +20,6 @@ public class Dialog extends JDialog {
 	}
 
 	private void initFrame(String title, int width, int height) {
-//		setIconImage(App.iIconApp);
 		setDefaultCloseOperation(JDialog.DISPOSE_ON_CLOSE);
 		setTitle(title);
 		setSize(width, height);

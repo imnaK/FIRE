@@ -32,6 +32,7 @@ public class Application {
 	public static String			APPLICATION_NAME = "FIRE",
 									APPLICATION_NAME_EXTENDED = "Find Recursively",
 									VERSION = "Unknown";
+
 	public static Frame					appFrame;
 	public static BufferedImage			APPLICATION_ICON;
 	private static final Preferences	prefs = Preferences.userNodeForPackage(Application.class);
@@ -40,7 +41,7 @@ public class Application {
 										SHOW_FULL_PATH = "show_full_path",
 										REGULAR_EXPRESSION_SEARCH = "regular_expression_search";
 	public static ArrayList<DataItem>	filesFound = new ArrayList<>();
-	
+
 	public static void main(String[] args) {
 		try {
 			new Application();

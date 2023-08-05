@@ -39,10 +39,10 @@ public class Search extends Thread {
 		Application.appFrame.btnOpenFile.setEnabled(false);
 		Application.appFrame.btnOpenInExplorer.setEnabled(false);
 		
-		Application.appFrame.btnChangeSearchPath.setEnabled(!isSearching);
-		Application.appFrame.btnOpenOptionsDialog.setEnabled(!isSearching);
-		Application.appFrame.btnStartSearchProcess.setEnabled(!isSearching);
-		Application.appFrame.tfSearchForString.setEnabled(!isSearching);
+		Application.appFrame.btnChangeSearchPath.setEnabled(false);
+		Application.appFrame.btnOpenOptionsDialog.setEnabled(false);
+		Application.appFrame.btnStartSearchProcess.setEnabled(false);
+		Application.appFrame.tfSearchForString.setEnabled(false);
 		
 		try {
 			Files.walkFileTree(path, new SimpleFileVisitor<Path>() { 
@@ -73,8 +73,9 @@ public class Search extends Thread {
 							Collections.reverse(Arrays.asList(dateParts));
 							long n = Util.DATE_FORMAT.parse(String.join(".", dateParts)).getTime();
 							searchHit = filterStartDate <= n && n <= filterEndDate;
-						} catch (ParseException e) {
-							e.printStackTrace();
+						} catch (ParseException ex) {
+							//noinspection CallToPrintStackTrace
+							ex.printStackTrace();
 						}
 					}
 					
@@ -90,16 +91,17 @@ public class Search extends Thread {
 				}
 			});
 		} catch (IOException ex) {
+			//noinspection CallToPrintStackTrace
 			ex.printStackTrace();
 		}
 
 		Application.loadListData();
 		
 		isSearching = false;
-		Application.appFrame.btnChangeSearchPath.setEnabled(!isSearching);
-		Application.appFrame.btnOpenOptionsDialog.setEnabled(!isSearching);
-		Application.appFrame.btnStartSearchProcess.setEnabled(!isSearching);
-		Application.appFrame.tfSearchForString.setEnabled(!isSearching);
+		Application.appFrame.btnChangeSearchPath.setEnabled(true);
+		Application.appFrame.btnOpenOptionsDialog.setEnabled(true);
+		Application.appFrame.btnStartSearchProcess.setEnabled(true);
+		Application.appFrame.tfSearchForString.setEnabled(true);
 		
 		Application.appFrame.tfSearchForString.requestFocus();
 	}
