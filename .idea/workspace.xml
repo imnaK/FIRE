@@ -5,17 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2877d644-7fd2-4f3a-a8a3-0842cece5048" name="Changes" comment="fixed typos, warnings, various stuff">
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/shelved.patch" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase__Changes_.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/prv/imnak/fire/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/prv/imnak/fire/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/prv/imnak/fire/DataItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/prv/imnak/fire/DataItem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/prv/imnak/fire/DateType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/prv/imnak/fire/DateType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/prv/imnak/fire/Frame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/prv/imnak/fire/Frame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/prv/imnak/fire/Search.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/prv/imnak/fire/Search.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/prv/imnak/fire/Util.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/prv/imnak/fire/Util.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/prv/imnak/fire/dialogs/Dialog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/prv/imnak/fire/dialogs/Dialog.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/prv/imnak/fire/dialogs/OptionsDialog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/prv/imnak/fire/dialogs/OptionsDialog.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,6 +24,9 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="ProjectErrors" />
@@ -122,7 +117,31 @@
       <option name="project" value="LOCAL" />
       <updated>1691253252699</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="fixed typos, warnings, various stuff">
+      <option name="closed" value="true" />
+      <created>1691262870673</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1691262870673</updated>
+    </task>
+    <task id="LOCAL-00004" summary="fixed typos, warnings, various stuff">
+      <option name="closed" value="true" />
+      <created>1691262902087</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1691262902087</updated>
+    </task>
+    <task id="LOCAL-00005" summary="fixed typos, warnings, various stuff">
+      <option name="closed" value="true" />
+      <created>1691262914723</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1691262914723</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
