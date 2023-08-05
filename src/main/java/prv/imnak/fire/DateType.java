@@ -11,7 +11,7 @@ public enum DateType {
 	DateType(String text) {
 		this.text = text;
 	}
-	
+
 	public String getText() {
 		return text;
 	}
